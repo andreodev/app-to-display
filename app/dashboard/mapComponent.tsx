@@ -1,12 +1,17 @@
 import * as React from "react";
-import { Alert, StyleSheet } from "react-native";
 import Svg, { G, Path, Text } from "react-native-svg";
 import { estado } from "./brasil";
+import { useRouter } from "expo-router";
 
 function SvgComponent(props: any) {
-  const handlePress = (estado: string) => {
-    Alert.alert("Parabéns!", `Você apertou no estado ${estado}`);
-  };
+  const router = useRouter();
+
+const handlePress = (estadoId: string) => {
+  router.push({
+    pathname: "/dashboard/[id]",
+    params: { id: estadoId },
+  });
+}
 
   return (
     <Svg
