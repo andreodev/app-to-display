@@ -64,7 +64,7 @@ export default function LoginPage() {
         <Animated.View style={{ transform: [{ scale: buttonScale }] }}>
           <TouchableOpacity
             style={[styles.button, styles.button2]}
-            onPressIn={handlePressIn}
+            onPressIn={() => handlePressIn('map')}
             onPressOut={handlePressOut}
             activeOpacity={0.9}
           >

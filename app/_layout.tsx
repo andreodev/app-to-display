@@ -7,6 +7,7 @@ export default function RootLayout() {
             <Stack.Screen name="dashboard" options={{headerShown: false}}/>
             <Stack.Screen name="dashboard/roleta" options={{headerShown: false}}/>
             <Stack.Screen name="dashboard/representante" options={{headerShown: false}}/>
+            <Stack.Screen name="dashboard/map" options={{headerShown: false}}/>
         </Stack>
     )
 }
